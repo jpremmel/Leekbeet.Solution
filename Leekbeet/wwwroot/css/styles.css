@@ -1,0 +1,19 @@
+h1 {
+    font-family: 'Barriecito', cursive;
+    font-size: 80px;
+    text-align: center;
+
+}
+
+body {
+    /* background-color: #e6ccb3; */
+    color: #331a00;
+    background-image: url("../img/background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.garlic {
+    text-align: center;
+    margin-top: 30%;
+}

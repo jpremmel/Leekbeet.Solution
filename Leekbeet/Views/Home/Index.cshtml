@@ -3,14 +3,21 @@
 <head>
     <title>Leekbeet</title>
     <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css'>
+    <link href="https://fonts.googleapis.com/css?family=Barriecito&display=swap" rel="stylesheet">
+    <link href="~/css/styles.css" rel="stylesheet" type="text/css">
+
 </head>
 <body>
-    <p>Welcome to LeekBeet! Enter a sentence or phrase below.</p>
-    
-    <form action="/output" method="post">
-        <label for="input">Translate a sentence into leekbeet:</label>
-        <input id="input" name="input" type="text">
-        <button type="submit">Submit</button>
-    </form>
+    <div class="container">
+        <h1>Leekbeet</h1>
+
+        <h5>Enter a sentence or phrase below.</h5>
+        
+        <form action="/output" method="post">
+            <label for="input">Translate a sentence into leekbeet:</label>
+            <input id="input" name="input" type="text">
+            <button class="btn btn-success" type="submit">Submit</button>
+        </form>
+    </div>
 </body>
 </html>
