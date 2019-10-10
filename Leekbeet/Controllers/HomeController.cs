@@ -17,5 +17,11 @@ namespace Leekbeet.Controllers
             newLeekbeet.Translate(newLeekbeet);
             return View(newLeekbeet);
         }
+
+        [HttpPost("/translate")]
+        public ActionResult Translate(LeekbeetTranslator leekbeet)
+        {
+            return View(leekbeet);
+        }
     }
 }
