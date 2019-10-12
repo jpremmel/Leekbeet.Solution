@@ -10,12 +10,15 @@
 <body>
     <div class="container">
         <h1>Leekbeet</h1>
-        <h4>Enter a sentence or phrase below.</h4>
-        <form action="/output" method="post">
-            <h4><label for="input">Translate a sentence into leekbeet:</label>
-            <input id="input" name="input" type="text">
-            <button class="btn btn-success" type="submit">Submit</button></h4>
-        </form>
+        <div class="garlic">
+            <form action="/output" method="post">
+                <div class="form-group">
+                    <h4><label for="input">Translate a phrase into leekbeet:</label>
+                    <input id="input" name="input" type="text" class="form-control">
+                    <button class="btn btn-success" type="submit">Submit</button></h4>
+                </div>
+            </form>
+        </div>
     </div>
 </body>
 </html>

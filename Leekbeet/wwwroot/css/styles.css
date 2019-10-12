@@ -1,7 +1,12 @@
+.container {
+    padding-right: 50px;
+    padding-left: 50px;
+}
+
 h1 {
     font-family: 'Barriecito', cursive;
     font-size: 80px;
-    text-align: center;
+    margin-bottom: 2%;
 }
 
 body {
@@ -9,10 +14,28 @@ body {
     background-image: url("../img/background.jpg");
     background-size: cover;
     background-repeat: no-repeat;
+    text-align: center;
+}
+
+.form-control {
+    width: 500px;
+    border-color: #331a00;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .garlic {
     text-align: center;
     margin-top: auto;
     margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+    width: 65%;
+}
+
+.btn-success {
+    color: #331a00;
+    font-weight: bold;
+    border-color: #331a00;
+    margin: 15px;
 }
