@@ -1,18 +1,17 @@
 using System;
-using System.Collections.Generic;
 
 namespace Leekbeet.Models
 {
     public class LeekbeetTranslator
     {
-        public string Input { get; set; }
-        public string Output { get; set; }
+        public static string Input { get; set; }
+        public static string Output { get; set; }
 
-        public void Translate(LeekbeetTranslator newLeekbeet)
+        public static void Translate()
         {
-            bool firstCharUpper = Char.IsUpper(newLeekbeet.Input[0]);
+            bool firstCharUpper = Char.IsUpper(Input[0]);
             string[] exceptions = { "and", "the", "a", "I", "but", "also", "in", "of", "for", "to", "with", "are", "I'm", "you", "your", "this", "there", "they're", "their", "am", "if", "is", "was", "my", "at", "that's", "from", "like", "since", "until", "our", "who", "what", "where", "when", "why", "how" };
-            string[] inputArray = newLeekbeet.Input.Split(' ');
+            string[] inputArray = Input.Split(' ');
             for (int i = 0; i < inputArray.Length; i++)
             {
                 bool punctuation = false;
@@ -138,7 +137,7 @@ namespace Leekbeet.Models
                 string firstWord = inputArray[0].Remove(0, 1);
                 inputArray[0] = char.ToUpper(firstChar) + firstWord;
             }
-            newLeekbeet.Output = string.Join(" ", inputArray);
+            Output = string.Join(" ", inputArray);
         }
     }
 }

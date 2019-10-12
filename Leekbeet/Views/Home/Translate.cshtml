@@ -1,16 +1,19 @@
+@using Leekbeet.Models;
 <!DOCTYPE html>
 <html>
 <head>
    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css'>
+   <link href="https://fonts.googleapis.com/css?family=Barriecito&display=swap" rel="stylesheet">
    <link href="~/css/styles.css" rel="stylesheet" type="text/css">
 </head>
 <body>
     <div class="container">
+        <h1>Leekbeet</h1>
         <div class="garlic">
-            <h3>@Model.Output</h3><br>
+            <h3>@LeekbeetTranslator.Output</h3><br>
             <h4>Would you like to translate another phrase?</h4>
             <a href="/"><button class="btn btn-success">Yes</button></a>
-            <a href="/"><button class="btn btn-success">No</button></a>
+            <a href="/garlic"><button class="btn btn-success">No</button></a>
         </div>
     </div>
 </body>
