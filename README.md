@@ -1,12 +1,12 @@
 # _Leekbeet_
 
-#### _A food-based translator, 12 Oct 2019_
+#### _A food-based translation app, 12 Oct 2019_
 
 #### By _**Mike McShane and Jacqueline Remmel**_
 
 ## Description
 
-_Originally inspired by leetspeak, this application takes a sentence or phrase from the user and translates it into an original pseudo-language made primarily of vegetable words._
+_Originally inspired by a leetspeak translator, this application takes a sentence or phrase from the user and translates it into an original pseudo-language made primarily of vegetable words._
 
 ## Setup/Installation Requirements
 
