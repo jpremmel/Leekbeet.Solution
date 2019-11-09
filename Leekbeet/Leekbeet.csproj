@@ -9,4 +9,18 @@
     </PackageReference>
     <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.2.0" PrivateAssets="All" />
   </ItemGroup>
+  <Target Name="BuildClientAssets" AfterTargets="ComputeFilesToPublish">
+  <Exec Command="npm install" />
+  <Exec Command="npm run prod" />
+
+  <!-- Include the newly-built files in the publish output -->
+  <ItemGroup>
+    <DistFiles Include="wwwroot\build\**" />
+    <ResolvedFileToPublish Include="@(BuildFiles->'%(FullPath)')" Exclude="@(ResolvedFileToPublish)">
+      <RelativePath>%(BuildFiles.Identity)</RelativePath>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </ResolvedFileToPublish>
+  </ItemGroup>
+
+</Target>
 </Project>
