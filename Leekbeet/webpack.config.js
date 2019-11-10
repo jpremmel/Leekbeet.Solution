@@ -5,7 +5,7 @@ const merge = require('webpack-merge');
 const productionConfig = merge([
   {
     output: {
-      publicPath: '/leekbeet/'
+      publicPath: '/Leekbeet.Solution/'
     },
   }
 ]);
