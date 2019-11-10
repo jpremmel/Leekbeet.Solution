@@ -1,0 +1,26 @@
+#n -p Wyam.Razor
+
+FileSystem.InputPaths.Add("Models");
+FileSystem.InputPaths.Add("Controllers");
+FileSystem.InputPaths.Add("Views/Home");
+FileSystem.OutputPath = "Leekbeet/Output";
+
+Pipelines.Add("Home",
+	ReadFiles("{!_,}*.cshtml"),
+	Razor(),
+	WriteFiles(".html")
+);
+
+//Pipelines.Add("Leekbeet",
+//	//ReadFiles("*.cs"),
+//	ReadFiles("*.cshtml"),
+//	Razor(),
+//	WriteFiles(".html"),
+//	OrderBy(@doc.Get<DateTime>("Published")).Descending()
+//);
+
+Pipelines.Add("Index",
+	ReadFiles("**/{!_,}*.cshtml"),
+	Razor(),
+	WriteFiles(".html")
+);
